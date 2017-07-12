@@ -1,4 +1,4 @@
-FROM alpine
+FROM alpine:3.6
 
 MAINTAINER Aleksandar Dimitrov <a.dimitrov@seidemann-web.com>
 
