@@ -12,5 +12,7 @@ RUN php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');" \
  && php -r "unlink('composer-setup.php');" \
  && mv composer.phar /usr/bin/composer
 
+RUN composer global require --dev deployer/deployer:~4.3.0 deployer/recipes:~4.0.7
+
 VOLUME /app
 WORKDIR /app
