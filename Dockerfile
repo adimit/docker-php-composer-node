@@ -3,7 +3,7 @@ FROM alpine:3.6
 MAINTAINER Aleksandar Dimitrov <a.dimitrov@seidemann-web.com>
 
 RUN apk update \
- && apk add nodejs nodejs-npm ca-certificates php5 php5-openssl php5-phar php5-json php5-xml php5-mysqli php5-dom php5-pdo php5-curl php5-zlib php5-ctype git curl \
+ && apk add nodejs nodejs-npm ca-certificates php5 php5-openssl php5-phar php5-json php5-xml php5-mysqli php5-dom php5-pdo php5-curl php5-zlib php5-ctype php5-pcntl git curl \
  && ln -s /usr/bin/php5 /usr/bin/php
 
 RUN php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');" \
